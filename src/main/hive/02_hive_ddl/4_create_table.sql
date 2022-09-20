@@ -1,9 +1,11 @@
 -- 指定数据存储路径的使用
 
 -- 1、在HDFS上创建/data/目录并将team_ace_player.txt文件上传至该目录下
+-- bash: hadoop fs -mkdir /data
+-- bash: hadoop fs -put team_ace_player.txt /data
 
 -- 2、切换数据库
-use sumu;
+use thisumu;
 
 -- 3、建表
 create table t_team_ace_player_location(
