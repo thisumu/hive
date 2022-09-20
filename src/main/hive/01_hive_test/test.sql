@@ -4,8 +4,8 @@ show tables;
 
 select * from employee;
 
-use sumu;
+use thisumu;
 show tables;
-select * from t_user;
+select * from t_user_1;
 
-desc formatted t_user;
+desc formatted t_user_1;

@@ -4,7 +4,7 @@
 -- 字段都是基本类型、字段顺序需注意一下，字段之间的分隔符是制表符，需要使用row format语法进行指定
 
 -- 1、切换数据库
-use sumu;
+use thisumu;
 -- 2、创建表
 create table t_archer(
     id int comment "主键",
@@ -27,4 +27,3 @@ show tables;
 -- bash命令：hdfs dfs -put archer.txt /user/hive/warehouse/sumu.db/t_archer
 
 -- 5、查看表里的数据
-select * from t_archer;
