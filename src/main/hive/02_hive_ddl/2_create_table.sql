@@ -5,7 +5,7 @@
 -- 需要指定字段之间的分隔符、集合元素之间的分隔符、map kv之间的分隔符
 
 -- 1、切花数据库
-use sumu;
+use thisumu;
 
 -- 2、建表
 create table t_hot_hero_skin_price(
