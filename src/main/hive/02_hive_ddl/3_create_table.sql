@@ -4,7 +4,7 @@
 -- 数据都是原生数据类型，且字段之间分隔符为\001，因此在建表的时候可以省去row format语句，因为hive默认的分隔符就是\001
 
 -- 1、切换数据库
-use sumu;
+use thisumu;
 
 -- 2、建表
 create table t_team_ace_player(
@@ -16,7 +16,9 @@ create table t_team_ace_player(
 -- 3、查看表是否建成功
 show tables;
 
--- 4、上传文件
+-- 4、将team_ace_player.txt文件上传至hdfs的/user/hive/warehouse/thisumu.db/t_team_ace_player目录下
+-- ^A分隔符符号\001,使用组合按键“ctrl+V+A”获得
+-- bash命令：hdfs dfs -put team_ace_player.txt /user/hive/warehouse/thisumu.db/t_team_ace_player
 
 -- 5、查看表数据
 select * from t_team_ace_player;
